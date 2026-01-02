@@ -14,7 +14,16 @@ import (
 
 	"github.com/KoHorizon/go-memory-dojo/modules/strings-module/strings"
 	"github.com/KoHorizon/go-memory-dojo/modules/strings-module/strings_practice"
+	"github.com/KoHorizon/go-memory-dojo/modules/http-module/http"
+	"github.com/KoHorizon/go-memory-dojo/modules/http-module/http_practice"
 )
+
+/*
+ * Available modules :
+ * "strings"
+ * "http"
+ */
+var moduleToRun = ""
 
 func main() {
 	// Define flags
@@ -33,17 +42,35 @@ func main() {
 	// Determine which module to run
 	targetModule := *module
 	if targetModule == "" {
-		targetModule = "strings" // Default to strings module
+		targetModule = moduleToRun // Default to strings module
 	}
 
 	// Run the appropriate mode
 	switch targetModule {
 	case "strings":
 		runStringsModule(*practice)
+	case "http":
+		runHTTPModule(*practice)
 	default:
 		fmt.Printf("Unknown module: %s\n", targetModule)
 		fmt.Println("Use --list to see available modules")
 		os.Exit(1)
+	}
+}
+
+func runHTTPModule(practiceMode bool) {
+	if practiceMode {
+		printHeader("PRACTICE MODE: net/http Package")
+		fmt.Println("Fill in the TODOs in http_practice/practice.go")
+		fmt.Println("Then run this to check your work!")
+		fmt.Println()
+		http_practice.RunAllPractice()
+	} else {
+		printHeader("THEORY MODE: net/http Package")
+		fmt.Println("Study these examples and understand WHY they work.")
+		fmt.Println("When ready, test yourself with: go run cmd/main.go --module http --practice")
+		fmt.Println()
+		http.RunAllDemonstrations()
 	}
 }
 
@@ -66,14 +93,18 @@ func runStringsModule(practiceMode bool) {
 func listModules() {
 	fmt.Println("Available Modules:")
 	fmt.Println()
-	fmt.Println("  strings    - fmt package: format verbs, flags, printing")
-	fmt.Println("  http       - (coming soon) net/http: HTTP client/server")
+	fmt.Println("  strings    - fmt package: format verbs, flags, printing         ✅")
+	fmt.Println("  http       - net/http: HTTP client/server, routing, middleware  ✅")
 	fmt.Println("  bufio      - (coming soon) buffered I/O")
 	fmt.Println("  concurrency - (coming soon) goroutines, channels, sync")
+	fmt.Println("  errors     - (coming soon) error handling, wrapping, Is/As")
+	fmt.Println("  time       - (coming soon) parsing, formatting, durations")
 	fmt.Println()
 	fmt.Println("Usage:")
 	fmt.Println("  go run cmd/main.go --module strings          # Theory mode")
 	fmt.Println("  go run cmd/main.go --module strings --practice  # Practice mode")
+	fmt.Println("  go run cmd/main.go --module http             # HTTP theory")
+	fmt.Println("  go run cmd/main.go --module http --practice  # HTTP practice")
 }
 
 func printHeader(title string) {

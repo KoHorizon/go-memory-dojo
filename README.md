@@ -56,13 +56,16 @@ As you master each module, add new ones:
 | Module | Package Focus | Status |
 |--------|---------------|--------|
 | strings-module | `fmt` - Format verbs, flags, printing | ✅ Complete |
-| http-module | `net/http` - HTTP client/server | 🔜 Planned |
+| http-module | `net/http` - HTTP client/server, routing, middleware | ✅ Complete |
+| errors-module | `errors` - Error handling, wrapping, Is/As | 🔜 Planned |
+| time-module | `time` - Parsing, formatting, durations | 🔜 Planned |
 | bufio-module | `bufio` - Buffered I/O | 🔜 Planned |
 | concurrency-module | Goroutines, channels, sync | 🔜 Planned |
 | io-module | `io` - Reader/Writer interfaces | 🔜 Planned |
 | json-module | `encoding/json` - JSON marshaling | 🔜 Planned |
 | testing-module | `testing` - Unit tests, benchmarks | 🔜 Planned |
 | context-module | `context` - Cancellation, timeouts | 🔜 Planned |
+| slices-module | `slices` + `maps` - Generic collections (Go 1.21+) | 🔜 Planned |
 
 ## Running the Project
 
