@@ -46,7 +46,7 @@ var modules = []struct {
 		name:        "time",
 		pkg:         "time",
 		description: "Parsing, formatting, durations, timers, tickers",
-		status:      "🔜",
+		status:      "✅",
 	},
 	{
 		name:        "context",
@@ -58,19 +58,19 @@ var modules = []struct {
 		name:        "concurrency",
 		pkg:         "goroutines/channels/sync",
 		description: "Goroutines, channels, select, sync primitives",
-		status:      "🔜",
+		status:      "✅",
 	},
 	{
 		name:        "json",
 		pkg:         "encoding/json",
 		description: "Marshal, unmarshal, struct tags, streaming",
-		status:      "🔜",
+		status:      "✅",
 	},
 	{
 		name:        "io",
 		pkg:         "io",
 		description: "Reader, Writer, interfaces, composition",
-		status:      "🔜",
+		status:      "✅",
 	},
 	{
 		name:        "testing",
