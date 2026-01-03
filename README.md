@@ -1,11 +1,8 @@
 # Go Memory Trainer
 
-A hands-on learning project designed to build muscle memory for Go programming through
-daily practice and deep understanding of core packages and concepts.
+A hands-on learning project designed to build muscle memory for Go programming through daily practice and deep understanding of core packages.
 
 ## Philosophy
-
-This project follows a simple but effective learning methodology:
 
 1. **Understand deeply** - Don't just memorize syntax. Understand *why* things work the way they do.
 2. **Practice daily** - Repetition builds neural pathways. Each morning, fill in the practice files from memory.
@@ -15,88 +12,69 @@ This project follows a simple but effective learning methodology:
 
 ```
 go-memory-trainer/
-├── go.mod
-├── README.md
 ├── cmd/
-│   └── main.go                    # Entry point to run examples
+│   └── main.go                     # CLI for project info
 └── modules/
-    ├── strings-module/            # fmt package - formatting and printing
-    │   ├── strings/               # Theory + working examples
-    │   │   └── strings.go
-    │   └── strings_practice/      # Your daily practice space
-    │       └── practice.go
-    ├── http-module/               # (future) net/http package
-    ├── bufio-module/              # (future) buffered I/O
-    ├── concurrency-module/        # (future) goroutines, channels, sync
+    ├── strings-module/             # fmt package
+    │   ├── strings/strings.go      # Theory - read and study
+    │   └── strings_practice/       # Practice - fill in TODOs
+    ├── http-module/                # net/http package
+    ├── errors-module/              # error handling
+    ├── bufio-module/               # buffered I/O
     └── ...
 ```
 
-## How to Use This Project
+## How to Use
 
-### Learning Phase
-1. Read through the theory file (`strings/strings.go`) carefully
-2. Run the examples: `go run cmd/main.go`
-3. Make sure you understand not just WHAT but WHY
+### 1. Study the Theory File
+Open the theory file (e.g., `modules/errors-module/errors/errors.go`) in your editor. Read the code and comments carefully. The examples show real patterns you'll use daily.
 
-### Daily Practice Phase
-1. Open `strings_practice/practice.go`
-2. Fill in all the TODOs from memory (no peeking!)
-3. Run to verify: `go run cmd/main.go --practice`
-4. Check your answers against the theory file
-5. Note what you got wrong - focus on those tomorrow
+### 2. Practice from Memory
+Open the practice file (e.g., `modules/errors-module/errors_practice/practice.go`). Fill in all the TODOs **without looking at the theory file**.
 
-### Expanding the Project
-As you master each module, add new ones:
-- Copy the module structure
-- Write theory with deep explanations
-- Create corresponding practice exercises
+### 3. Check Your Answers
+Compare your answers to the theory file. Note what you missed - focus on those tomorrow.
+
+## CLI Commands
+
+```bash
+# Show usage information
+go run cmd/main.go
+
+# List all modules
+go run cmd/main.go --list
+
+# Show info for a specific module
+go run cmd/main.go --info errors
+```
 
 ## Modules
 
-| Module | Package Focus | Status |
-|--------|---------------|--------|
-| strings-module | `fmt` - Format verbs, flags, printing | ✅ Complete |
-| http-module | `net/http` - HTTP client/server, routing, middleware | ✅ Complete |
-| errors-module | `errors` - Error handling, wrapping, Is/As | 🔜 Planned |
-| time-module | `time` - Parsing, formatting, durations | 🔜 Planned |
-| bufio-module | `bufio` - Buffered I/O | 🔜 Planned |
-| concurrency-module | Goroutines, channels, sync | 🔜 Planned |
-| io-module | `io` - Reader/Writer interfaces | 🔜 Planned |
-| json-module | `encoding/json` - JSON marshaling | 🔜 Planned |
-| testing-module | `testing` - Unit tests, benchmarks | 🔜 Planned |
-| context-module | `context` - Cancellation, timeouts | 🔜 Planned |
-| slices-module | `slices` + `maps` - Generic collections (Go 1.21+) | 🔜 Planned |
-
-## Running the Project
-
-```bash
-# Run all theory examples
-go run cmd/main.go
-
-# Run practice mode (your filled-in exercises)
-go run cmd/main.go --practice
-
-# Run a specific module
-go run cmd/main.go --module strings
-```
+| Module | Package | Description | Status |
+|--------|---------|-------------|--------|
+| strings | `fmt` | Format verbs, flags, width/precision, print family | ✅ |
+| http | `net/http` | Client, server, handlers, routing, middleware | ✅ |
+| errors | `errors` | Wrapping, Is/As, sentinel errors, custom types | ✅ |
+| bufio | `bufio` | Buffered I/O, Scanner, Reader, Writer | ✅ |
+| time | `time` | Parsing, formatting, durations, timers | 🔜 |
+| context | `context` | Cancellation, timeouts, values | 🔜 |
+| concurrency | `goroutines/channels/sync` | Goroutines, channels, select | 🔜 |
+| json | `encoding/json` | Marshal, unmarshal, struct tags | 🔜 |
+| io | `io` | Reader, Writer, interfaces | 🔜 |
+| testing | `testing` | Unit tests, table tests, benchmarks | 🔜 |
 
 ## Tips for Effective Practice
 
-1. **Morning sessions work best** - Your brain consolidates learning during sleep.
-   Practice first thing to reinforce those neural pathways.
+1. **Morning sessions** - Your brain consolidates learning during sleep. Practice first thing.
 
-2. **Don't cheat** - The struggle of trying to remember is where learning happens.
-   If you can't remember, make your best guess, then check.
+2. **Don't cheat** - The struggle to remember is where learning happens. Make your best guess first.
 
-3. **Track your progress** - Keep a simple log of what you got right/wrong each day.
-   You'll see improvement over time.
+3. **Type, don't copy-paste** - The physical act of typing engages motor memory.
 
-4. **Understand before memorizing** - If you don't understand WHY something works,
-   you'll forget it. Go back to the theory.
+4. **Understand before memorizing** - If you don't understand WHY, you'll forget. Go back to the theory.
 
-5. **Type, don't copy-paste** - The physical act of typing engages motor memory.
-   This is deliberate - it's called "muscle memory" for a reason.
+5. **Track progress** - Keep a log of what you got right/wrong. You'll see improvement.
 
 ## License
 
-MIT - Use this for your own learning!
+MIT
