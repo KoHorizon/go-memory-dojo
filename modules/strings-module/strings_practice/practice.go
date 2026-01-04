@@ -361,9 +361,8 @@ func SelfTest() {
 	fmt.Println()
 }
 
-// RunAllPractice executes all practice exercises.
-// This is called from the main command in practice mode.
-func RunAllPractice() {
+// AllPractice executes all practice exercises.
+func AllPractice() {
 	PracticeGeneralVerbs()
 	PracticeIntegerVerbs()
 	PracticeFloatVerbs()

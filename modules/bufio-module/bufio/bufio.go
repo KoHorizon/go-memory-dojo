@@ -596,8 +596,8 @@ func DemonstratePerformance() {
 	// Warning: slice is only valid until next read!
 }
 
-// RunAllDemonstrations is not meant to be called - this file is for reading.
-func RunAllDemonstrations() {
+// AllDemonstrations is not meant to be called - this file is for reading.
+func AllDemonstrations() {
 	DemonstrateReaderBasics()
 	DemonstrateScanner()
 	DemonstrateCustomSplit()

@@ -747,8 +747,8 @@ func DemonstrateConversions() {
 	}
 }
 
-// RunAllDemonstrations executes all examples.
-func RunAllDemonstrations() {
+// AllDemonstrations executes all examples.
+func AllDemonstrations() {
 	DemonstrateErrorBasics()
 	DemonstrateSentinelErrors()
 	DemonstrateErrorWrapping()

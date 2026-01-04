@@ -972,8 +972,8 @@ func DemonstrateCommonPatterns() {
 	fmt.Printf("Users: %s\n", strings.TrimSpace(string(body2)))
 }
 
-// RunAllDemonstrations executes all examples in order.
-func RunAllDemonstrations() {
+// AllDemonstrations executes all examples in order.
+func AllDemonstrations() {
 	DemonstrateBasicClient()
 	DemonstrateCustomRequests()
 	DemonstrateClientConfiguration()

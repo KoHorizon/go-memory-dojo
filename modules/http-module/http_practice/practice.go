@@ -534,8 +534,8 @@ func MiniProject() {
 	fmt.Println()
 }
 
-// RunAllPractice executes all practice exercises.
-func RunAllPractice() {
+// AllPractice executes all practice exercises.
+func AllPractice() {
 	PracticeBasicClient()
 	PracticeCustomRequests()
 	PracticeClientConfig()

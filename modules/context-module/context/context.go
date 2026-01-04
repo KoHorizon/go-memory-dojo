@@ -642,8 +642,8 @@ func DemonstrateAfterFunc() {
 	time.Sleep(10 * time.Millisecond) // Give AfterFunc time to run
 }
 
-// RunAllDemonstrations is not meant to be called - this file is for reading.
-func RunAllDemonstrations() {
+// AllDemonstrations is not meant to be called - this file is for reading.
+func AllDemonstrations() {
 	DemonstrateCreatingContexts()
 	DemonstrateCancellation()
 	DemonstrateTimeouts()

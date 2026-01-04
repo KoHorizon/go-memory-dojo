@@ -300,8 +300,8 @@ func MiniProject() {
 	// }
 }
 
-// RunAllPractice is not meant to be called - this file is for reading.
-func RunAllPractice() {
+// AllPractice is not meant to be called - this file is for reading.
+func AllPractice() {
 	PracticeWhyContext()
 	PracticeCreatingContexts()
 	PracticeCancellation()

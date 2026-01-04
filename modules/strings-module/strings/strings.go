@@ -656,8 +656,8 @@ func DemonstratePerformance() {
 	// result := b.String()
 }
 
-// RunAllDemonstrations executes all examples in order.
-func RunAllDemonstrations() {
+// AllDemonstrations executes all examples in order.
+func AllDemonstrations() {
 	DemonstrateGeneralVerbs()
 	DemonstrateIntegerVerbs()
 	DemonstrateFloatVerbs()

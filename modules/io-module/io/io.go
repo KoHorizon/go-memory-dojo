@@ -726,8 +726,8 @@ func DemonstrateCommonMistakes() {
 	fmt.Println("Mistake 5: Buffer contains stale data, use [:n]")
 }
 
-// RunAllDemonstrations is not meant to be called - this file is for reading.
-func RunAllDemonstrations() {
+// AllDemonstrations is not meant to be called - this file is for reading.
+func AllDemonstrations() {
 	DemonstrateReader()
 	DemonstrateWriter()
 	DemonstrateCloser()

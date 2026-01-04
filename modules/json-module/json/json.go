@@ -763,8 +763,8 @@ func DemonstrateCommonMistakes() {
 	fmt.Println("Mistake 5: No space in struct tags")
 }
 
-// RunAllDemonstrations is not meant to be called - this file is for reading.
-func RunAllDemonstrations() {
+// AllDemonstrations is not meant to be called - this file is for reading.
+func AllDemonstrations() {
 	DemonstrateMarshal()
 	DemonstrateUnmarshal()
 	DemonstrateStructTags()

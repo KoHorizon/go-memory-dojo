@@ -626,8 +626,8 @@ func DemonstrateCommonMistakes() {
 	fmt.Println("  Use ParseInLocation for local times")
 }
 
-// RunAllDemonstrations is not meant to be called - this file is for reading.
-func RunAllDemonstrations() {
+// AllDemonstrations is not meant to be called - this file is for reading.
+func AllDemonstrations() {
 	DemonstrateCreating()
 	DemonstrateComponents()
 	DemonstrateFormatting()

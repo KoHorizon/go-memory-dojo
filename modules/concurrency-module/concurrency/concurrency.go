@@ -872,8 +872,8 @@ func DemonstrateCond() {
 	wg.Wait()
 }
 
-// RunAllDemonstrations is not meant to be called - this file is for reading.
-func RunAllDemonstrations() {
+// AllDemonstrations is not meant to be called - this file is for reading.
+func AllDemonstrations() {
 	DemonstrateGoroutines()
 	DemonstrateChannelBasics()
 	DemonstrateClosingChannels()
