@@ -56,12 +56,12 @@ go run cmd/main.go --info errors
 | http | `net/http` | Client, server, handlers, routing, middleware | ✅ |
 | errors | `errors` | Wrapping, Is/As, sentinel errors, custom types | ✅ |
 | bufio | `bufio` | Buffered I/O, Scanner, Reader, Writer | ✅ |
-| time | `time` | Parsing, formatting, durations, timers | 🔜 |
-| context | `context` | Cancellation, timeouts, values | 🔜 |
-| concurrency | `goroutines/channels/sync` | Goroutines, channels, select | 🔜 |
-| json | `encoding/json` | Marshal, unmarshal, struct tags | 🔜 |
-| io | `io` | Reader, Writer, interfaces | 🔜 |
-| testing | `testing` | Unit tests, table tests, benchmarks | 🔜 |
+| context | `context` | Cancellation, timeouts, deadlines, values | ✅ |
+| time | `time` | Time, Duration, formatting, parsing, timers | ✅ |
+| concurrency | `goroutines/channels/sync` | Goroutines, channels, select, WaitGroup, Mutex | ✅ |
+| json | `encoding/json` | Marshal, unmarshal, struct tags, streaming | ✅ |
+| io | `io` | Reader, Writer, Closer, utilities, Pipe | ✅ |
+| testing | `testing` | Unit tests, table tests, benchmarks, examples, fuzzing | ✅ |
 
 ## Tips for Effective Practice
 
